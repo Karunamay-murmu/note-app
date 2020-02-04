@@ -1,0 +1,21 @@
+@import '../../styles/global.scss';
+
+nav {
+    background-color: map-get($Primary-colors, CARIBBEAN-GREEN);
+    .nav-bar {
+        width: 90%;
+        margin: auto;
+        padding: 1rem 0;
+        align-items: center;    
+        i {
+            color: white;
+        }
+        .brand .brand-title{
+            font-family: $heading-font;
+            font-weight: 400;
+            font-size: 2.2rem;
+            color: map-get($Nutral-colors, SNOW);
+            margin-left: 60px;
+        }
+    }
+}

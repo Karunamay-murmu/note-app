@@ -1,0 +1,28 @@
+@import '../../styles/global.scss';
+
+.create-note-container{
+    background-color:#eeeeee;
+    height: 80vh;
+    position: relative;
+    width: 70%;
+    margin: 50px auto 0;
+    border-radius: 20px;
+    .create-note-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    i {
+        background-color: white;
+        color: map-get($Primary-colors, CARIBBEAN-GREEN);
+        border-radius: 100%;
+        padding: 1rem 1.2rem .7rem;
+    }
+    p {
+        font-family: $body-font;
+        margin-top: 20px;
+        font-size: 1.1rem;
+    }
+}

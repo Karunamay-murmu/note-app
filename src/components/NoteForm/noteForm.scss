@@ -1,0 +1,55 @@
+@import '../../styles/global.scss';
+
+.form-container {
+    width: 70%;
+    margin: auto;
+
+    form {
+        margin-top: 40px;
+        label {
+            font-family: $body-font;
+            margin: 1rem 0;
+            font-size: 1.3rem;
+            color: map-get($Primary-colors, DAZZLED-BLUE);
+            text-transform: capitalize;
+        }
+        input {
+            color: map-get($Primary-colors, DAZZLED-BLUE);
+        }
+        input, textarea {
+            padding: .5rem;
+            font-size: 1rem;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid map-get($Primary-colors, DAZZLED-BLUE);
+            max-width: 100%;
+            font-family: $body-font;
+        }
+        ::placeholder{
+            font-size: .8rem;
+            letter-spacing: .1rem;
+            font-weight: 500;
+            opacity: .5;
+        }
+        .form-buttons {
+            justify-content: flex-end;
+            margin-top: 1rem;
+        }
+        .cancel-button {
+            background-color: transparent;
+            border: 1px solid map-get($Primary-colors, DAZZLED-BLUE);
+        }
+        .cancel-button:hover {
+            background-color: map-get($Primary-colors, DAZZLED-BLUE);
+            transition: .5s;
+        }
+        .cancel-link-button {
+            color: map-get($Primary-colors, DAZZLED-BLUE);
+            font-weight: bold;     
+        }
+        .cancel-link-button:hover {
+            color: map-get($Nutral-colors, SNOW);
+            transition: .5s;
+        }
+    }
+}

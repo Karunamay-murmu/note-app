@@ -1,0 +1,45 @@
+@import '../../styles/global.scss';
+
+.showNotes-container{
+    width: 50%;
+    margin: 0 auto 2rem;
+    .main-note-container{
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        position: relative;
+    }
+    .note-container {
+        background-color: map-get($Nutral-colors, SNOW);
+        border-radius: 10px;
+        box-shadow: map-get($Primary-colors, DAZZLED-BLUE) 0 3px 10px;
+        flex-grow: 1;
+        margin-right: 3rem;
+        padding: 1.5rem 1rem;
+        h1 {
+            font-weight: 500;
+        }
+        .creating-date {
+            margin: 0 0 1rem;
+            font-weight: 600;
+            font-size: .8rem;
+            opacity: .7;
+        }
+        P{
+            line-height: 1.5rem;
+        }
+    }
+    .create-btn {
+        margin: 2rem 0 0 0;
+    }
+    .icons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        .icon {
+            color: lightgray;
+            margin: 10px 0 0;
+        }
+    }
+}
